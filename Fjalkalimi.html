@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Password required!</title>
+<style>
+body {
+background-color: lightblue;
+padding: 30px;
+}
+</style>
+<script>
+function kontrolloFjalkalimin() {
+var fjalkalimi = document.getElementById("kutiaFjalkalimit");
+var fjalkalimiShkruar = fjalkalimi.value;
+if(fjalkalimiShkruar == "3333") {
+return true;
+}
+alert("Error!Password incorrect");
+return false;
+}
+</script>
+</head>
+<body>
+<p style="font-size: 30pt;">Please enter the password to pass</p>
+<p>Just a few steps and our in</p>
+<p>Password:<input id="kutiaFjalkalimit" type="password"/></p>
+<a href="file:///C:/Users/TECHCOM/Documents/kodimet/About%20roblox.html" onclick="return kontrolloFjalkalimin();">
+Continue
+</a>
+</body>
+</html>
